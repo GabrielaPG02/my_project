@@ -1,0 +1,1260 @@
+
+### faker.providers.address
+
+	fake.address()                                                                                 # 939 Barnett Place Apt. 067
+	                                                                                                 West Jonathan, AZ 20631
+	fake.bothify(text="## ??", letters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")     # 67 Kz
+	fake.building_number()                                                                         # 0136
+	fake.city()                                                                                    # Alexismouth
+	fake.city_prefix()                                                                             # West
+	fake.city_suffix()                                                                             # side
+	fake.country()                                                                                 # Libyan Arab Jamahiriya
+	fake.country_code()                                                                            # PW
+	fake.geo_coordinate(center=None, radius=0.001)                                                 # 161.994319
+	fake.hexify(text="^^^^", upper=False)                                                          # c13c
+	fake.latitude()                                                                                # -31.0747005
+	fake.lexify(text="????", letters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")       # mAyb
+	fake.longitude()                                                                               # 55.932268
+	fake.military_apo()                                                                            # PSC 2418, Box 5951
+	fake.military_dpo()                                                                            # Unit 2723 Box 6630
+	fake.military_ship()                                                                           # USNV
+	fake.military_state()                                                                          # AA
+	fake.numerify(text="###")                                                                      # 183
+	fake.postalcode()                                                                              # 70706
+	fake.postalcode_plus4()                                                                        # 08640-4214
+	fake.postcode()                                                                                # 90615
+	fake.random_digit()                                                                            # 7
+	fake.random_digit_not_null()                                                                   # 7
+	fake.random_digit_or_empty()                                                                   # 3
+	fake.random_element(elements=('a', 'b', 'c'))                                                  # a
+	fake.random_int(min=0, max=9999)                                                               # 7370
+	fake.random_letter()                                                                           # U
+	fake.random_lowercase_letter()                                                                 # x
+	fake.random_number(digits=None, fix_len=False)                                                 # 951
+	fake.random_sample(elements=('a', 'b', 'c'), length=None)                                      # ['c']
+	fake.random_sample_unique(elements=('a', 'b', 'c'), length=None)                               # {'a'}
+	fake.random_uppercase_letter()                                                                 # A
+	fake.randomize_nb_elements(number=10, le=False, ge=False, min=None, max=None)                  # 7
+	fake.secondary_address()                                                                       # Apt. 582
+	fake.state()                                                                                   # Georgia
+	fake.state_abbr()                                                                              # AS
+	fake.street_address()                                                                          # 8761 Janet Fields
+	fake.street_name()                                                                             # Dana Station
+	fake.street_suffix()                                                                           # Shoal
+	fake.zipcode()                                                                                 # 34595
+	fake.zipcode_plus4()                                                                           # 42856-3636
+
+### faker.providers.automotive
+
+	fake.license_plate()                                                                           # 4FE9786
+
+### faker.providers.bank
+
+	fake.bank_country()                                                                            # GB
+	fake.bban()                                                                                    # VXSV8940864845816
+	fake.iban()                                                                                    # GB18OMSI0391066653875
+
+### faker.providers.barcode
+
+	fake.ean(length=13)                                                                            # 3963972611896
+	fake.ean13()                                                                                   # 1844386898177
+	fake.ean8()                                                                                    # 28916734
+
+### faker.providers.color
+
+	fake.color_name()                                                                              # SpringGreen
+	fake.hex_color()                                                                               # #2a326c
+	fake.rgb_color()                                                                               # 0,132,101
+	fake.rgb_css_color()                                                                           # rgb(97,131,211)
+	fake.safe_color_name()                                                                         # aqua
+	fake.safe_hex_color()                                                                          # #226600
+
+### faker.providers.company
+
+	fake.bs()                                                                                      # optimize real-time web services
+	fake.catch_phrase()                                                                            # Quality-focused composite system engine
+	fake.company()                                                                                 # Edwards, Hardin and Richardson
+	fake.company_suffix()                                                                          # Group
+
+### faker.providers.credit_card
+
+	fake.credit_card_expire(start="now", end="+10y", date_format="%m/%y")                          # 05/19
+	fake.credit_card_full(card_type=None)                                                          # JCB 16 digit
+	                                                                                                 Dana Wright
+	                                                                                                 3599812934607762 10/27
+	                                                                                                 CVC: 016
+	fake.credit_card_number(card_type=None)                                                        # 3591911998929431
+	fake.credit_card_provider(card_type=None)                                                      # Mastercard
+	fake.credit_card_security_code(card_type=None)                                                 # 009
+
+### faker.providers.currency
+
+	fake.cryptocurrency()                                                                          # ('VTC', 'Vertcoin')
+	fake.cryptocurrency_code()                                                                     # DASH
+	fake.cryptocurrency_name()                                                                     # Primecoin
+	fake.currency()                                                                                # ('CZK', 'Czech koruna')
+	fake.currency_code()                                                                           # GEL
+	fake.currency_name()                                                                           # Eritrean nakfa
+
+### faker.providers.date_time
+
+	fake.am_pm()                                                                                   # PM
+	fake.century()                                                                                 # XIII
+	fake.date(pattern="%Y-%m-%d", end_datetime=None)                                               # 1982-01-18
+	fake.date_between(start_date="-30y", end_date="today")                                         # 1988-12-20
+	fake.date_between_dates(date_start=None, date_end=None)                                        # 2018-05-09
+	fake.date_object(end_datetime=None)                                                            # 1984-07-05
+	fake.date_this_century(before_today=True, after_today=False)                                   # 2013-12-31
+	fake.date_this_decade(before_today=True, after_today=False)                                    # 2010-12-27
+	fake.date_this_month(before_today=True, after_today=False)                                     # 2018-05-04
+	fake.date_this_year(before_today=True, after_today=False)                                      # 2018-01-13
+	fake.date_time(tzinfo=None, end_datetime=None)                                                 # 2001-06-09 08:05:56
+	fake.date_time_ad(tzinfo=None, end_datetime=None)                                              # 1084-12-17 16:25:58
+	fake.date_time_between(start_date="-30y", end_date="now", tzinfo=None)                         # 2008-05-19 04:17:38
+	fake.date_time_between_dates(datetime_start=None, datetime_end=None, tzinfo=None)              # 2018-05-09 21:36:47
+	fake.date_time_this_century(before_now=True, after_now=False, tzinfo=None)                     # 2015-07-31 21:37:36
+	fake.date_time_this_decade(before_now=True, after_now=False, tzinfo=None)                      # 2013-07-10 10:28:56
+	fake.date_time_this_month(before_now=True, after_now=False, tzinfo=None)                       # 2018-05-05 18:01:15
+	fake.date_time_this_year(before_now=True, after_now=False, tzinfo=None)                        # 2018-01-08 21:05:02
+	fake.day_of_month()                                                                            # 13
+	fake.day_of_week()                                                                             # Sunday
+	fake.future_date(end_date="+30d", tzinfo=None)                                                 # 2018-05-29
+	fake.future_datetime(end_date="+30d", tzinfo=None)                                             # 2018-06-06 16:01:10
+	fake.iso8601(tzinfo=None, end_datetime=None)                                                   # 2010-05-01T02:31:01
+	fake.month()                                                                                   # 11
+	fake.month_name()                                                                              # June
+	fake.past_date(start_date="-30d", tzinfo=None)                                                 # 2018-04-29
+	fake.past_datetime(start_date="-30d", tzinfo=None)                                             # 2018-04-29 11:21:52
+	fake.time(pattern="%H:%M:%S", end_datetime=None)                                               # 23:34:21
+	fake.time_delta(end_datetime=None)                                                             # 5885 days, 10:58:20
+	fake.time_object(end_datetime=None)                                                            # 16:07:25
+	fake.time_series(start_date="-30d", end_date="now", precision=None, distrib=None, tzinfo=None) # <generator object Provider.time_series at 0x0353B630>
+	fake.timezone()                                                                                # Europe/Brussels
+	fake.unix_time(end_datetime=None)                                                              # 246160875
+	fake.year()                                                                                    # 1971
+
+### faker.providers.file
+
+	fake.file_extension(category=None)                                                             # html
+	fake.file_name(category=None, extension=None)                                                  # front.txt
+	fake.file_path(depth=1, category=None, extension=None)                                         # /west/choose.ods
+	fake.mime_type(category=None)                                                                  # message/rfc822
+	fake.unix_device(prefix=None)                                                                  # /dev/vdw
+	fake.unix_partition(prefix=None)                                                               # /dev/vdd5
+
+### faker.providers.internet
+
+	fake.ascii_company_email(*args, **kwargs)                                                      # cindy96@hill.org
+	fake.ascii_email(*args, **kwargs)                                                              # loridavis@snyder.com
+	fake.ascii_free_email(*args, **kwargs)                                                         # nicholas35@yahoo.com
+	fake.ascii_safe_email(*args, **kwargs)                                                         # danakim@example.org
+	fake.company_email(*args, **kwargs)                                                            # cmunoz@miller.com
+	fake.domain_name(*args, **kwargs)                                                              # phelps.org
+	fake.domain_word(*args, **kwargs)                                                              # kline
+	fake.email(*args, **kwargs)                                                                    # sweeneysteven@jones.com
+	fake.free_email(*args, **kwargs)                                                               # trivas@yahoo.com
+	fake.free_email_domain(*args, **kwargs)                                                        # hotmail.com
+	fake.image_url(width=None, height=None)                                                        # https://placeholdit.imgix.net/~text?txtsize=55&txt=816x
+	                                                                                                 463&w=816&h=463
+	fake.ipv4(network=False, address_class=None, private=None)                                     # 210.103.112.116
+	fake.ipv4_network_class()                                                                      # c
+	fake.ipv4_private(network=False, address_class=None)                                           # 172.22.17.130
+	fake.ipv4_public(network=False, address_class=None)                                            # 198.32.65.55
+	fake.ipv6(network=False)                                                                       # 3f25:fa02:8e7b:b426:2b32:8ace:1d04:ed3c
+	fake.mac_address()                                                                             # 0b:b7:3e:a8:ed:d4
+	fake.safe_email(*args, **kwargs)                                                               # john94@example.org
+	fake.slug(*args, **kwargs)                                                                     # none-nice-science
+	fake.tld()                                                                                     # biz
+	fake.uri()                                                                                     # http://bates-rangel.com/faq/
+	fake.uri_extension()                                                                           # .html
+	fake.uri_page()                                                                                # homepage
+	fake.uri_path(deep=None)                                                                       # posts
+	fake.url(schemes=None)                                                                         # https://smith.com/
+	fake.user_name(*args, **kwargs)                                                                # martinterrance
+
+### faker.providers.isbn
+
+	fake.isbn10(separator="-")                                                                     # 0-488-33269-9
+	fake.isbn13(separator="-")                                                                     # 978-0-296-36490-1
+
+### faker.providers.job
+
+	fake.job()                                                                                     # Designer, television/film set
+
+### faker.providers.lorem
+
+	fake.paragraph(nb_sentences=3, variable_nb_sentences=True, ext_word_list=None)                 # Course very itself question state. Property single form
+	                                                                                                  series apply.
+	fake.paragraphs(nb=3, ext_word_list=None)                                                      # ['Democrat former place perhaps machine citizen room. O
+	                                                                                                 ften million lay anything purpose. Point single name sc
+	                                                                                                 hool but produce perform.', 'Question team where strong
+	                                                                                                  measure drive up. Them fund agent page show must. Prof
+	                                                                                                 essional own those evidence available financial situati
+	                                                                                                 on theory.', 'Catch gas leader four begin end door. The
+	                                                                                                 se possible surface hear fund since others.']
+	fake.sentence(nb_words=6, variable_nb_words=True, ext_word_list=None)                          # Tough article approach opportunity week.
+	fake.sentences(nb=3, ext_word_list=None)                                                       # ['Start teacher senior special address it baby amount.'
+	                                                                                                 , 'Rate certainly unit science doctor truth.', 'Ten pri
+	                                                                                                 ce light situation then research.']
+	fake.text(max_nb_chars=200, ext_word_list=None)                                                # Major physical first military never. President myself g
+	                                                                                                 reat by. Remember final recognize. Remember story room 
+	                                                                                                 value.
+	fake.word(ext_word_list=None)                                                                  # determine
+	fake.words(nb=3, ext_word_list=None)                                                           # ['military', 'enough', 'claim']
+
+### faker.providers.misc
+
+	fake.binary(length=1048576)                                                                    # b'\xbd\x1f\xbf\x9e\x15\x8e\xc5Y\x0b\xe0\xd3\n&?\xa8\x83
+	                                                                                                 \xe2l42Q\xd6\xa3s\xbc\x17\x93s2O\xd6\x1f\x92\xfeZ\xe3\x
+	                                                                                                 a9\xb5b\xba#s\xa5a\xe6\xfbS\xb7]\x80\x9c\x17\xcc\\y\x8b
+	                                                                                                 |\xcf\xd7`\x1e\xd6\xd9L\x9f\xd4\xbc_\x8d\xec~\x8d\xb5\x
+	                                                                                                 e3\x97\xb2*\xb9c\xa0\xe5l\x06rj\xcb\\\xf6\xc4\x96!\xc9\
+	                                                                                                 xd5\x1b\xc0,_\x89\xd4\xe1|\x01W\x8d\xf0\x864\x9c\xaa\xf
+	                                                                                                 9\xea\x8d(\xca>\x93\'\xbe\xff\xa9\xb1L\xe9\xa3\xac\x1e\
+	                                                                                                 xadC\x97z6@R\xcd\x01=c\xb0\x8bA~\x9eb\xf7\x968\xc5\xc2*
+	                                                                                                 \xfe\x81\xd2\x86q\xd8\x039\xa0\x86\x7f\xa0u\x8cM\xa9\x1
+	                                                                                                 5\xb9s\xa7\xa4<$\xdf\xda\x80\xc4\xfd\xe7\xac\xce\x17\n\
+	                                                                                                 xd1\x17\xcd\x0b\xda\x0f37\xf8+#\xd8F\xc6\xa45\\\x1e\xdf
+	                                                                                                 \xe6\xdcl&\xd0\xad\xa9\xadO\x89\x98\xff\xa7[Y\xad\x94LO
+	                                                                                                 ;\xf2\x83\x18\x03\x10\x1auh\x95Z\x0b\xc0a$]\xcapG\x1c\x
+	                                                                                                 be\xf8T7\xca7\x17\xba"\x1b\xf3\x14\xa6s\x1c\xae\xa5\n\x
+	                                                                                                 ad\xd8\x04%}\xb6\xc5\xaf\x03\xe8\xb7\xaf*\x88\xc6\xfa\x
+	                                                                                                 fe[|\x88\xaa\xfe\x11\x9aI\xe1{\x00\xe5Eg\x8c\x81\x8b\x0
+	                                                                                                 1XB\x81%\x08\xaf\x82c\xcbUM\x81\xa6\x0c\xd1\xf7\x81\xa1
+	                                                                                                 \x8e\x97\x15_\xe5\xb3\xf2]q\xe8P\xf3a2Cg\xda\xcb\xc1N\x
+	                                                                                                 86\xc5\xfe\xec\xaf\xe8\x83\xf3\xc2\t(]\xdc\xe8W [\x0fnn
+	                                                                                                 tS\x9c\x15\x85\x05f\xbc\x95\x1c\xab\x16\x18t\x95\xe9\xd
+	                                                                                                 5\xc6\xee\x1eg\x83\x9e\xf4\x12B\xd5\x15\xc6:\xec\x8c\x1
+	                                                                                                 4\xfa\xe6\xde\xb5\xf7/\xa9}_A\x8d=6\xa1\x88\xe5mJ\x13\x
+	                                                                                                 a5d\xb4{\x06\xb0\xf2\x16g\x95eN\xb9\x97\xae\x00I\xec@\x
+	                                                                                                 a8I+\xa7u\x1e\x0e\x10\xee/>u8\x0e\xf1\xbe\xca\xc6\x94\x
+	                                                                                                 1a\xbb\xba\xa1\x9d\x9c\x85\xba9/\x01\xee\xd1\xcf\xe2W\x
+	                                                                                                 80\xed\xcb\xa8\xd5\xa2=\x85\x92\xf5s\xeb\xb1\x8cJ\xc0\x
+	                                                                                                 9f@\xfe\xd2f=\xb5\x00*\x1dw;\xd1[\x08\x0fs\xf5\xa5\xa6\
+	                                                                                                 xa4\x07"\xf8\xaf\xc1\xd5\x80k\xbc\x96\xa5\x13\x1foK\xef
+	                                                                                                 \xb1\xa9\x0c\x8d\x90\x07\xcb\x15\x07\x063\xe9#\xf0\xc3\
+	                                                                                                 x8e\xb2\x97zV\xd9\xfc\xfc\xff\xde\xea\x08*\x0e\xbf\r(\n
+	                                                                                                 kFkA\xba\x07\xf4\xf8ln:\xc3I\xba5d\xf2\xc4\xd2\x14N\xbd
+	                                                                                                 \xba\x19\xa5A,\x08#\xce\x89P\xb79\xa5u\xce\xa5\xdc\x8at
+	                                                                                                 \x83sx\x1fn\x05\x03\x08\xc8<\x0f\xeb\x0b\x18\xea\x95\xc
+	                                                                                                 5\x9a\xc4\x98\x85\x86\x8e\x8f\x9e\x8e\xbf\xda\xc9\x05\x
+	                                                                                                 a1j\x9e\x191_\x17\xe1\xd7:\xe02\x81\x05W]\xdai^\xc9F"\x
+	                                                                                                 fc\xda]\x89\xdeY\xe8\xc1\x0e\x90oX\xfb\xb6G\xd0\xb0\x16
+	                                                                                                 `\xc1,\xcd{+\x9d\xc4H \t\xea\x81D)vtl\xe1\x00wi\xb33n\x
+	                                                                                                 be\x96\xc89\xdd\xa9\x1e2T\xc3\xb7\xfa\'\\\x85HE\x103\xa
+	                                                                                                 f\x11|6W\xa7\xfb9\xa3\x8b\xb20\xaf\x96\x1e\xd9\nj\x01\x
+	                                                                                                 1a\x90\xac\x03\x1f\x01j83{\xe5\x0e\xf7$\x9fifT3vN\xbd{H
+	                                                                                                 c\x05\xbc\x8e\xde\x19\xc3Vk\xfa\xcc/94}\x7f\x9cSy\xa31f
+	                                                                                                 \xf9\x17\xd7\xc3\xa5#\xbd\xaf\xf1=\x0b3\x95\xb0\x85R)\x
+	                                                                                                 a9\x87\xcfY1v\xfe\x9d\x1a:*6\xaaZ\x0f\xd8\x8a\x9f\xed22
+	                                                                                                 \x1c\xa2\xcb\xb3S\xca\x97\xd7uyK\xe9+\xc1\x1d\xcd\xd9\x
+	                                                                                                 9c\x1b\xcf\x17\xeb\x92.\x91\x93\xd8\'\xef8\xee\x83\xcf\
+	                                                                                                 xb1\xd7\x7f\x1c\x9fS\x04\x1dg\\]\x94\x0f/:\xdf\xe2<,\xf
+	                                                                                                 f\x14q\xca\xc7o7\xe0\xa8\xa4\xad\xa8\xb2@\xde\xbcy\xbb\
+	                                                                                                 xd7/o\x8c\x98\xb2+\xea\xd4\x15\xfe$\x16\xb6\xde\x1b\x14
+	                                                                                                 \xe1\x9f9\xc5\x8dI\x8b1\x0cpw\x19\xe4\x8cw\x81+\xa2wI\x
+	                                                                                                 a2\xab\x0fqT7\xe7\xba\xa7\rr\t\xcbH@\xf9\x983\xf4\xd6(\
+	                                                                                                 xebc\x1b\x99{\x89\xbe\x80\xbb\xf6\xfd\r\xba\x89\xec[\x1
+	                                                                                                 6\xeb\xc1\x8d\x9b\xcf\x134\xe3\xf6\x96a-V\xb6\x8f"wN-\x
+	                                                                                                 a8\x8f\x18\xa5M\x10\xd5\x9bO\x03\x96\x19\x8e>\xd9\ryM\x
+	                                                                                                 00\xd8\xc3%\xa2\x8bPwQ\xf6D+|\xb2\xbd\xf3\x1f\xed\xdc\x
+	                                                                                                 d8X2]>\x07vy$!N\xc8z\xcb\xde7\x17\xcbQ\xc3\xa5p'
+	fake.boolean(chance_of_getting_true=50)                                                        # False
+	fake.language_code()                                                                           # it
+	fake.locale()                                                                                  # pa_PK
+	fake.md5(raw_output=False)                                                                     # b66ab8070bf13f7098b26ec7ef89e2b8
+	fake.null_boolean()                                                                            # False
+	fake.password(length=10, special_chars=True, digits=True, upper_case=True, lower_case=True)    # P3SIBcze#r
+	fake.sha1(raw_output=False)                                                                    # 73aa6121b22fac846f7096b6485cd690ad7ce688
+	fake.sha256(raw_output=False)                                                                  # 1bb4f7bdf4f39d91bdb9f48ae510747c7e5bfd8c597635043ab0320
+	                                                                                                 77f6f4a98
+	fake.uuid4()                                                                                   # 518b9843-7948-9b17-b892-463a3988ccf7
+
+### faker.providers.person
+
+	fake.first_name()                                                                              # Jason
+	fake.first_name_female()                                                                       # Kimberly
+	fake.first_name_male()                                                                         # Neil
+	fake.last_name()                                                                               # Stewart
+	fake.last_name_female()                                                                        # Lambert
+	fake.last_name_male()                                                                          # Beck
+	fake.name()                                                                                    # Thomas Garcia
+	fake.name_female()                                                                             # Sarah Douglas
+	fake.name_male()                                                                               # Vincent Rodriguez
+	fake.prefix()                                                                                  # Dr.
+	fake.prefix_female()                                                                           # Mrs.
+	fake.prefix_male()                                                                             # Mr.
+	fake.suffix()                                                                                  # PhD
+	fake.suffix_female()                                                                           # MD
+	fake.suffix_male()                                                                             # MD
+
+### faker.providers.phone_number
+
+	fake.msisdn()                                                                                  # 9309380040616
+	fake.phone_number()                                                                            # 067-758-5655
+
+### faker.providers.profile
+
+	fake.profile(fields=None, sex=None)                                                            # {'job': 'Legal secretary', 'company': 'Green-Weaver', '
+	                                                                                                 ssn': '263-44-1403', 'residence': '19162 Joanne Motorwa
+	                                                                                                 y\nPort Andrew, IN 41563', 'current_location': (Decimal
+	                                                                                                 ('-65.464138'), Decimal('-10.040368')), 'blood_group': 
+	                                                                                                 '0-', 'website': ['http://lee.org/'], 'username': 'jaso
+	                                                                                                 n17', 'name': 'Elizabeth Fuller', 'sex': 'F', 'address'
+	                                                                                                 : '009 Tracy Forest Apt. 545\nFarleychester, ND 07449-9
+	                                                                                                 544', 'mail': 'hkelley@gmail.com', 'birthdate': '1982-0
+	                                                                                                 2-10'}
+	fake.simple_profile(sex=None)                                                                  # {'username': 'ashleystafford', 'name': 'Cindy Anderson'
+	                                                                                                 , 'sex': 'F', 'address': '8693 Walker Summit Suite 743\
+	                                                                                                 nSouth Steven, AZ 10464-8569', 'mail': 'kathrynglover@g
+	                                                                                                 mail.com', 'birthdate': '2016-10-11'}
+
+### faker.providers.python
+
+	fake.pybool()                                                                                  # False
+	fake.pydecimal(left_digits=None, right_digits=None, positive=False)                            # 51740066934.0
+	fake.pydict(nb_elements=10, variable_nb_elements=True, *value_types)                           # {'always': 'IUcMyzbkgbaUAGbfJyqU', 'green': 'http://mar
+	                                                                                                 tin-baker.info/author.php', 'under': 'lpcKvfYSHsCCSISlj
+	                                                                                                 jTT', 'method': 3793, 'by': 'georgecarlson@hotmail.com'
+	                                                                                                 , 'national': 'eHmgGPrIqkCjCRfeejkm', 'young': 'timothy
+	                                                                                                 09@burke-scott.com', 'money': 'NYQxYalrHmEFHsqMzfAg', '
+	                                                                                                 reach': 6198, 'claim': 'https://www.rivas.info/privacy.
+	                                                                                                 asp', 'century': 3351, 'condition': 'pAiTgzoohMLYdmHrTR
+	                                                                                                 SG'}
+	fake.pyfloat(left_digits=None, right_digits=None, positive=False)                              # 9903335058846.51
+	fake.pyint()                                                                                   # 4365
+	fake.pyiterable(nb_elements=10, variable_nb_elements=True, *value_types)                       # [Decimal('-633.515732'), 'oVgmRJEXCIxNgFMjfnlx', 'ywUFB
+	                                                                                                 qGwwfhtXKQtgAQY', 'DYxFZRaLRzeVryRQlEWU', 'WxFKTCOYpNlz
+	                                                                                                 kiuWssgg', datetime.datetime(1984, 1, 17, 17, 35, 21), 
+	                                                                                                 'shannonguerra@hotmail.com']
+	fake.pylist(nb_elements=10, variable_nb_elements=True, *value_types)                           # [Decimal('7718746922.4'), 4773, 'serranomichelle@gmail.
+	                                                                                                 com', 'lindsaywright@hotmail.com', 'GQWbbwCNawKZIwUiniU
+	                                                                                                 E', 'vCLVKHtFyxIiwdtFixvz']
+	fake.pyset(nb_elements=10, variable_nb_elements=True, *value_types)                            # {Decimal('4276436.5575'), 9543, 'jqDgAjQssGOvrWaJtdHm',
+	                                                                                                  'TrFByAtKfQvXVWDlAjMw', 'http://www.campos.biz/tag/mai
+	                                                                                                 n/register/', 'dlCyrohpMIRjxVtemcLp', Decimal('156181.9
+	                                                                                                 41504316'), -973072.36, 'XZyASjLAVnAkOsTKOQQt', datetim
+	                                                                                                 e.datetime(1987, 2, 27, 16, 0, 38), 'ashley52@turner.bi
+	                                                                                                 z'}
+	fake.pystr(min_chars=None, max_chars=20)                                                       # OQiDjVbCEiSYbjvSsRZo
+	fake.pystruct(count=10, *value_types)                                                          # ([288.96, 'greenlori@gmail.com', 8930, 'jennifersherman
+	                                                                                                 @dillon.net', 139, 'https://www.pineda-wallace.com/faq/
+	                                                                                                 ', 3558, 'MWDyAbJRFNQNPgiTLclj', 'IzuFXhbXXPUBhluTDKGU'
+	                                                                                                 , 'TYWkwciIpRWoOThokEKE'], {'word': Decimal('7635718203
+	                                                                                                 50.73'), 'receive': 'wendy58@yahoo.com', 'series': 'cSq
+	                                                                                                 XNGcvPUlNCvYCusWz', 'southern': 5567, 'finally': Decima
+	                                                                                                 l('417.45973372622'), 'capital': 'OIAGrOwUYwBvuxEnMFXa'
+	                                                                                                 , 'member': 'mcintoshmolly@gmail.com', 'drug': 'TpcqzxX
+	                                                                                                 ROBhPNlnwYIUg', 'light': datetime.datetime(2000, 11, 16
+	                                                                                                 , 8, 49, 52), 'laugh': 'whiterandy@hall.com'}, {'four':
+	                                                                                                  {0: 'AjKEAsSBmIVtIRNnQVQm', 1: ['SfPZDDBhTIIqPTAjRWKP'
+	                                                                                                 , 5764, 'mYBQMCsHTKtWEibZGjWI'], 2: {0: 'ogonzalez@gmai
+	                                                                                                 l.com', 1: 1097, 2: ['vJkENXzQuDrLduIJiSIN', 'victoria5
+	                                                                                                 2@wiley-ruiz.com']}}, 'sing': {1: 2144, 2: ['OeVSfXZAPG
+	                                                                                                 RwltMlyZMK', datetime.datetime(1976, 11, 15, 11, 36, 37
+	                                                                                                 ), 9224], 3: {1: 5554, 2: -59010502303145.0, 3: ['cWNdn
+	                                                                                                 qnrVJNTrcKyxVsy', 'KYaphcpjJrHtTGEMgUpE']}}, 'investmen
+	                                                                                                 t': {2: Decimal('-2190.260341'), 3: ['https://www.ware.
+	                                                                                                 com/tag/tag/terms/', 'bVRSySUaRtGmjuVFnNet', datetime.d
+	                                                                                                 atetime(2014, 10, 31, 14, 9, 12)], 4: {2: 'https://coch
+	                                                                                                 ran.com/posts/posts/main/terms.jsp', 3: 9056, 4: [9875,
+	                                                                                                  'KqxrSCGVgSDynxAbWxdl']}}, 'president': {3: 'fpCNGWedk
+	                                                                                                 dqrtPdWDaaK', 4: ['qhzpQgjQVEIInafpQLfS', 'spliFjdOfuVA
+	                                                                                                 aRgshLse', 2682], 5: {3: 'zSPduGSioNVqTnfNnNca', 4: dat
+	                                                                                                 etime.datetime(1998, 10, 1, 21, 27, 26), 5: ['vPxWzoIJD
+	                                                                                                 gknBJgaxvjl', -5489978176.71]}}, 'agency': {4: 9875, 5:
+	                                                                                                  ['tSuljnMqeaVhZrKpkNxo', 4842, 'gAKwSyqvXsOUvzaxUmcX']
+	                                                                                                 , 6: {4: -229966677.128, 5: 'ZOjjcperjFAIXFsknghz', 6: 
+	                                                                                                 ['jEKryFEHKcIzifkGnCbf', Decimal('4276736999940.0')]}},
+	                                                                                                  'tell': {5: -7989.1249, 6: [datetime.datetime(1973, 1,
+	                                                                                                  31, 13, 36, 33), 'bTaSvXTuXnBzQctelueq', 7743], 7: {5:
+	                                                                                                  'matthew12@yahoo.com', 6: 'JzFhjflpHDabhggZRnVY', 7: [
+	                                                                                                 'http://www.marquez.com/list/tags/blog/category.php', '
+	                                                                                                 oXYgivoJruGYXUbqkyRC']}}, 'head': {6: 359041571935571.0
+	                                                                                                 , 7: [2216, Decimal('-2603568592385.0'), Decimal('-3102
+	                                                                                                 69466252.22')], 8: {6: 'pLSSVyaTKNeCPHAcfmhh', 7: 'fNuS
+	                                                                                                 vtxfBGwmxNtCeBWb', 8: ['https://griffin.info/tag/blog/m
+	                                                                                                 ain/', 'https://www.freeman-fischer.org/wp-content/home
+	                                                                                                 .jsp']}}, 'cover': {7: Decimal('618186555476435.0'), 8:
+	                                                                                                  ['FNJglPZMeMQZhMpMxWeL', 'YseCtVLEmKaaJAGuHfGJ', -9118
+	                                                                                                 564518.329], 9: {7: 'https://mays-mcclure.com/login/', 
+	                                                                                                 8: 'davidhoward@edwards-chavez.com', 9: [Decimal('50111
+	                                                                                                 927950.916'), 3292]}}, 'public': {8: 'pDqvQnZEWwJVTWUvn
+	                                                                                                 geZ', 9: [5179, 'nicolebyrd@johnson.com', Decimal('-863
+	                                                                                                 27185306.626')], 10: {8: Decimal('-7296.8207555804'), 9
+	                                                                                                 : 'FIWfyoZIAHhNYxoauNNE', 10: [-852848351.71, 'qwhHKPzd
+	                                                                                                 qyspqaCTlngh']}}, 'who': {9: 4.71, 10: [94559432116.371
+	                                                                                                 , -3323039.18, 'david38@norris.net'], 11: {9: Decimal('
+	                                                                                                 7189.875858'), 10: 'nyFNPFzYpINMFJnlaZWQ', 11: ['lisahe
+	                                                                                                 ndricks@khan.com', 'http://cameron-gutierrez.com/catego
+	                                                                                                 ry/']}}})
+	fake.pytuple(nb_elements=10, variable_nb_elements=True, *value_types)                          # (9543, 'xSoflolJXfVlpawYzhzF', 'rturner@johnson.com', 1
+	                                                                                                 8734624.29, 'KxkONmSPvnEfLbZWeAqp', 'IEsiFdoHOmyPWdPyVQ
+	                                                                                                 kB', 'ZMwCRlolpnhZGdKgqGtw', 'AaEiPMoAGVPxpsSJCeZN')
+
+### faker.providers.ssn
+
+	fake.ssn()                                                                                     # 082-22-7548
+
+### faker.providers.user_agent
+
+	fake.chrome(version_from=13, version_to=63, build_from=800, build_to=899)                      # Mozilla/5.0 (Windows NT 6.1) AppleWebKit/5350 (KHTML, l
+	                                                                                                 ike Gecko) Chrome/30.0.885.0 Safari/5350
+	fake.firefox()                                                                                 # Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_12_1; rv:1.9
+	                                                                                                 .2.20) Gecko/2012-03-05 02:12:37 Firefox/3.8
+	fake.internet_explorer()                                                                       # Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.2; Trid
+	                                                                                                 ent/5.1)
+	fake.linux_platform_token()                                                                    # X11; Linux x86_64
+	fake.linux_processor()                                                                         # i686
+	fake.mac_platform_token()                                                                      # Macintosh; U; Intel Mac OS X 10_9_5
+	fake.mac_processor()                                                                           # PPC
+	fake.opera()                                                                                   # Opera/9.46.(X11; Linux x86_64; ps-AF) Presto/2.9.190 Ve
+	                                                                                                 rsion/11.00
+	fake.safari()                                                                                  # Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; 
+	                                                                                                 sk-SK) AppleWebKit/535.1.4 (KHTML, like Gecko) Version/
+	                                                                                                 4.0.5 Mobile/8B119 Safari/6535.1.4
+	fake.user_agent()                                                                              # Opera/8.40.(X11; Linux x86_64; sa-IN) Presto/2.9.171 Ve
+	                                                                                                 rsion/11.00
+	fake.windows_platform_token()                                                                  # Windows NT 5.01
+
+## LANGUAGE la
+
+### faker.providers.address
+
+	fake.address()                                                                                 # 36105 Monica Freeway Suite 326
+	                                                                                                 Wilcoxborough, OK 81728
+	fake.building_number()                                                                         # 7010
+	fake.city()                                                                                    # Elijahville
+	fake.city_prefix()                                                                             # New
+	fake.city_suffix()                                                                             # haven
+	fake.country()                                                                                 # Papua New Guinea
+	fake.country_code()                                                                            # GD
+	fake.geo_coordinate(center=None, radius=0.001)                                                 # -71.076232
+	fake.latitude()                                                                                # 36.896920
+	fake.longitude()                                                                               # 179.597599
+	fake.military_apo()                                                                            # PSC 2594, Box 0627
+	fake.military_dpo()                                                                            # Unit 4236 Box 0092
+	fake.military_ship()                                                                           # USS
+	fake.military_state()                                                                          # AE
+	fake.postalcode()                                                                              # 75193
+	fake.postalcode_plus4()                                                                        # 45424-8497
+	fake.postcode()                                                                                # 51912
+	fake.secondary_address()                                                                       # Suite 202
+	fake.state()                                                                                   # Ohio
+	fake.state_abbr()                                                                              # PA
+	fake.street_address()                                                                          # 729 Joseph Trace Apt. 290
+	fake.street_name()                                                                             # Rivera Gateway
+	fake.street_suffix()                                                                           # Stream
+	fake.zipcode()                                                                                 # 55435
+	fake.zipcode_plus4()                                                                           # 90412-1997
+
+### faker.providers.automotive
+
+	fake.license_plate()                                                                           # 2265 MN
+
+### faker.providers.bank
+
+	fake.bank_country()                                                                            # GB
+	fake.bban()                                                                                    # PKZA2308339704770
+	fake.iban()                                                                                    # GB37CCQU7099408812578
+
+### faker.providers.barcode
+
+	fake.ean(length=13)                                                                            # 6463492369781
+	fake.ean13()                                                                                   # 2279118364542
+	fake.ean8()                                                                                    # 89787540
+
+### faker.providers.color
+
+	fake.color_name()                                                                              # LimeGreen
+	fake.hex_color()                                                                               # #4e8caf
+	fake.rgb_color()                                                                               # 91,53,207
+	fake.rgb_css_color()                                                                           # rgb(14,70,243)
+	fake.safe_color_name()                                                                         # teal
+	fake.safe_hex_color()                                                                          # #cc9900
+
+### faker.providers.company
+
+	fake.bs()                                                                                      # re-contextualize end-to-end applications
+	fake.catch_phrase()                                                                            # Ameliorated contextually-based flexibility
+	fake.company()                                                                                 # Lopez-Andrews
+	fake.company_suffix()                                                                          # Ltd
+
+### faker.providers.credit_card
+
+	fake.credit_card_expire(start="now", end="+10y", date_format="%m/%y")                          # 07/26
+	fake.credit_card_full(card_type=None)                                                          # JCB 16 digit
+	                                                                                                 Brandon Parker
+	                                                                                                 3538216339432426 09/21
+	                                                                                                 CVC: 985
+	fake.credit_card_number(card_type=None)                                                        # 3594581490806143
+	fake.credit_card_provider(card_type=None)                                                      # VISA 13 digit
+	fake.credit_card_security_code(card_type=None)                                                 # 439
+
+### faker.providers.currency
+
+	fake.cryptocurrency()                                                                          # ('ETH', 'Ethereum')
+	fake.cryptocurrency_code()                                                                     # XRP
+	fake.cryptocurrency_name()                                                                     # AMP
+	fake.currency()                                                                                # ('XPF', 'CFP franc')
+	fake.currency_code()                                                                           # CRC
+	fake.currency_name()                                                                           # Azerbaijani manat
+
+### faker.providers.date_time
+
+	fake.am_pm()                                                                                   # PM
+	fake.century()                                                                                 # V
+	fake.date(pattern="%Y-%m-%d", end_datetime=None)                                               # 1993-05-13
+	fake.date_between(start_date="-30y", end_date="today")                                         # 2000-09-02
+	fake.date_between_dates(date_start=None, date_end=None)                                        # 2018-05-09
+	fake.date_object(end_datetime=None)                                                            # 1983-01-20
+	fake.date_this_century(before_today=True, after_today=False)                                   # 2002-06-25
+	fake.date_this_decade(before_today=True, after_today=False)                                    # 2011-02-17
+	fake.date_this_month(before_today=True, after_today=False)                                     # 2018-05-01
+	fake.date_this_year(before_today=True, after_today=False)                                      # 2018-03-16
+	fake.date_time(tzinfo=None, end_datetime=None)                                                 # 1976-05-12 14:17:22
+	fake.date_time_ad(tzinfo=None, end_datetime=None)                                              # 1888-04-28 19:33:10
+	fake.date_time_between(start_date="-30y", end_date="now", tzinfo=None)                         # 1999-06-27 01:34:19
+	fake.date_time_between_dates(datetime_start=None, datetime_end=None, tzinfo=None)              # 2018-05-09 21:36:48
+	fake.date_time_this_century(before_now=True, after_now=False, tzinfo=None)                     # 2008-05-28 22:44:24
+	fake.date_time_this_decade(before_now=True, after_now=False, tzinfo=None)                      # 2017-04-06 11:32:29
+	fake.date_time_this_month(before_now=True, after_now=False, tzinfo=None)                       # 2018-05-08 15:35:30
+	fake.date_time_this_year(before_now=True, after_now=False, tzinfo=None)                        # 2018-01-03 00:53:29
+	fake.day_of_month()                                                                            # 05
+	fake.day_of_week()                                                                             # Tuesday
+	fake.future_date(end_date="+30d", tzinfo=None)                                                 # 2018-05-29
+	fake.future_datetime(end_date="+30d", tzinfo=None)                                             # 2018-05-10 23:37:03
+	fake.iso8601(tzinfo=None, end_datetime=None)                                                   # 2004-09-12T14:50:31
+	fake.month()                                                                                   # 11
+	fake.month_name()                                                                              # March
+	fake.past_date(start_date="-30d", tzinfo=None)                                                 # 2018-04-10
+	fake.past_datetime(start_date="-30d", tzinfo=None)                                             # 2018-04-11 23:03:28
+	fake.time(pattern="%H:%M:%S", end_datetime=None)                                               # 14:55:54
+	fake.time_delta(end_datetime=None)                                                             # 13923 days, 20:32:16
+	fake.time_object(end_datetime=None)                                                            # 21:32:30
+	fake.time_series(start_date="-30d", end_date="now", precision=None, distrib=None, tzinfo=None) # <generator object Provider.time_series at 0x03556180>
+	fake.timezone()                                                                                # Asia/Vientiane
+	fake.unix_time(end_datetime=None)                                                              # 106586356
+	fake.year()                                                                                    # 2011
+
+### faker.providers.file
+
+	fake.file_extension(category=None)                                                             # flac
+	fake.file_name(category=None, extension=None)                                                  # iste.mov
+	fake.file_path(depth=1, category=None, extension=None)                                         # /veritatis/nulla.css
+	fake.mime_type(category=None)                                                                  # application/ecmascript
+	fake.unix_device(prefix=None)                                                                  # /dev/xvde
+	fake.unix_partition(prefix=None)                                                               # /dev/vdd9
+
+### faker.providers.internet
+
+	fake.ascii_company_email(*args, **kwargs)                                                      # williambailey@shaw-meyer.com
+	fake.ascii_email(*args, **kwargs)                                                              # jennifer66@blackwell.info
+	fake.ascii_free_email(*args, **kwargs)                                                         # tammypeterson@gmail.com
+	fake.ascii_safe_email(*args, **kwargs)                                                         # cliffordbanks@example.org
+	fake.company_email(*args, **kwargs)                                                            # sarahstuart@reyes.org
+	fake.domain_name(*args, **kwargs)                                                              # pena.com
+	fake.domain_word(*args, **kwargs)                                                              # long
+	fake.email(*args, **kwargs)                                                                    # zbarnes@gmail.com
+	fake.free_email(*args, **kwargs)                                                               # shiggins@hotmail.com
+	fake.free_email_domain(*args, **kwargs)                                                        # yahoo.com
+	fake.image_url(width=None, height=None)                                                        # https://www.lorempixel.com/443/353
+	fake.ipv4(network=False, address_class=None, private=None)                                     # 19.113.57.243
+	fake.ipv4_network_class()                                                                      # a
+	fake.ipv4_private(network=False, address_class=None)                                           # 10.8.34.147
+	fake.ipv4_public(network=False, address_class=None)                                            # 1.31.73.231
+	fake.ipv6(network=False)                                                                       # bf35:5e44:f75b:26f6:1841:8823:2a8c:70f6
+	fake.mac_address()                                                                             # 83:0e:2c:b4:fd:57
+	fake.safe_email(*args, **kwargs)                                                               # matthew29@example.net
+	fake.slug(*args, **kwargs)                                                                     # accusamus-quia
+	fake.tld()                                                                                     # com
+	fake.uri()                                                                                     # https://ward.com/posts/homepage/
+	fake.uri_extension()                                                                           # .html
+	fake.uri_page()                                                                                # terms
+	fake.uri_path(deep=None)                                                                       # explore/tag
+	fake.url(schemes=None)                                                                         # http://www.joseph.com/
+	fake.user_name(*args, **kwargs)                                                                # millerbreanna
+
+### faker.providers.isbn
+
+	fake.isbn10(separator="-")                                                                     # 0-923742-91-3
+	fake.isbn13(separator="-")                                                                     # 978-0-04-788915-8
+
+### faker.providers.job
+
+	fake.job()                                                                                     # Magazine journalist
+
+### faker.providers.lorem
+
+	fake.paragraph(nb_sentences=3, variable_nb_sentences=True, ext_word_list=None)                 # Maiores iure quasi saepe nobis. Minus in reiciendis at 
+	                                                                                                 aliquam non. Aspernatur magni et cum. Nemo suscipit quo
+	                                                                                                 s iure voluptatem et dolor.
+	fake.paragraphs(nb=3, ext_word_list=None)                                                      # ['Ipsa molestiae id aliquam. Laborum ad soluta animi fa
+	                                                                                                 cere dolor neque.', 'Nisi nesciunt inventore qui corpor
+	                                                                                                 is tempore magni. Doloribus explicabo omnis ducimus pos
+	                                                                                                 simus saepe. Occaecati officia culpa laborum nisi rem.'
+	                                                                                                 , 'Esse distinctio quia ex aspernatur natus. Quod alias
+	                                                                                                  saepe mollitia alias impedit quaerat. Nostrum reiciend
+	                                                                                                 is similique numquam eum.']
+	fake.sentence(nb_words=6, variable_nb_words=True, ext_word_list=None)                          # Reprehenderit quibusdam laudantium ipsam.
+	fake.sentences(nb=3, ext_word_list=None)                                                       # ['Iusto expedita occaecati occaecati vero.', 'Debitis o
+	                                                                                                 mnis explicabo.', 'Dolores quam eaque fuga.']
+	fake.text(max_nb_chars=200, ext_word_list=None)                                                # Voluptatem mollitia possimus. Explicabo sint excepturi 
+	                                                                                                 facere mollitia ipsam at.
+	fake.word(ext_word_list=None)                                                                  # veniam
+	fake.words(nb=3, ext_word_list=None)                                                           # ['vitae', 'accusamus', 'qui']
+
+### faker.providers.misc
+
+	fake.binary(length=1048576)                                                                    # b'\x17\xab\xe8\xc9\xdb\xb3\xa4\xa9\x06e\x1a\xcc\xf9\x1a
+	                                                                                                 z\xaaw8?1\x81!\x02\x18\xee\x04\xdfk\\\xd0xfg\xad-\xbc\x
+	                                                                                                 cb\'\xd7tB%\xf2F\xc9D<\xda(\xd3\xee&\x1a]z\xe9\x18\xb4\
+	                                                                                                 xc4{_(\x11{\x80\xd8\x06\xce(TXk\x1e^\xd4\xf4NRw\x13\t\x
+	                                                                                                 d4\xf4\x0f\x04\x9ac?D\x0b\x90\xa7\xc2\xa1\xc1\xab&\xb4I
+	                                                                                                 \xcb\xb0\xfa8U\xc6\xb3\xfb4f \xa2\x86\xdc\xbdO,\x8c\x80
+	                                                                                                 }\x97\x15\x82N=\xc5\xc1\x17\nDl;\x91\xf3\xe7\x11#\xc5\x
+	                                                                                                 16N\xc1\xc8\xf0\xca\x81\xbc\x00m\xb7v\xa4\xb7\xc3\xf1i\
+	                                                                                                 x8d\xdbll\xed\x01\xbd\x01\x03&#\xc0P)\x7f\xd6\x8c"\xc9\
+	                                                                                                 x07\xf2kh\x93\x1d\xf0o\xb74z\x1d\xef\xd4:\xc4y\xaed\xb8
+	                                                                                                 \x17\xec\x98?\x8cT\xf2\xdd@\x8b.c\x88T\xc8!\x02\xd9)\xd
+	                                                                                                 f\xc7\xd6z\xbax\x07\x95G\xa97\x9e\x16\x80\xc8l\x0f\xd0w
+	                                                                                                 /\xbf\x89,gZ\x8d\x1f\r\x93)\xf9v\xdd\n~I\x90\x9e`\xd7W\
+	                                                                                                 xd4\x04G\x90\xaf\xac\xdc\x8a\xe1FCz\xa5D\xbf\x952\xa3P\
+	                                                                                                 xbb\x0f\xf2\xcf\xf3\xdd\x83\xef{\xc8"\x88\xef\x0c0B\x13
+	                                                                                                 icOa\x06\x85E\x8aY\x86\'v\xfa\xe8\xbd\xb0\x05\xab\xa0m\
+	                                                                                                 xe7\xa1\xba\n\xb1\xac\xf9\x8fW\x9b\x92%\xae\xeaM\xb1=M\
+	                                                                                                 x17\xdfs\xef\n\xf8o.\xf1\x96\xbf\xa4)\xee\xb0\xa7\x00\x
+	                                                                                                 d2\x01\xcd;\xa0\xdeX\x98Z\xd9\xd1hKNL\xa9\x15\x16^\x15\
+	                                                                                                 xf9\'\x03&\xb5\xbf\xca\x8d\x1d\xcf]\x06\xf8\t\x8fw\xd1 
+	                                                                                                 \x1a\x06I4\xab\xfd\xbb\x05\xc1d[\xf9\xc1\x17Ap\xc9\xd8v
+	                                                                                                 \x18\xff\xc8\xf8\xba\xebHZ:1\xa0\xd3\x02\xef\xceIu\xf8\
+	                                                                                                 xda;:\x91g~P\xdd\x8c\x02\xa2\xbf=O\xdb6E\xe5\x1b\x8aj\x
+	                                                                                                 90K\xa8&1=\x91\x8b\xc8\x88\xe1\x1b\x93\x92"\x01C6:\xebv
+	                                                                                                 \x02\x92\x16\xe6\xc4\x07\x07<\xe9)x\xf7\xa8\x1a\xb85>\x
+	                                                                                                 f3\xf2\xc6\x92\xe0\x0e\xbdr\x10\xfc\x8fK[+\xbf\xa2\xab\
+	                                                                                                 xdf\xba\x1b ,{\x8fL\xf5\x891\xe1L\xc9\xde\xdbF\x99\xa7\
+	                                                                                                 x0b\x9fB\xfb\xdfX\xbc\x0c\x14\x00tas\xa6\xfc\x9f_\xf0#\
+	                                                                                                 xd5\r\xbbQ$\x91!\xf2<\xe2G\xe6\n\xfbB=\x8a\xe9b\xea;f\x
+	                                                                                                 a7|r\x8c\x9a&\xe3\x1f\x00\x0b\xdb\xfa\xce^\r\xbb\x86\xb
+	                                                                                                 aj\xb68\x0bge\x95\xf5JE\x1d\x9b<\xa19\\PTO\x85\xc8\x13\
+	                                                                                                 xa4\xa6h0\xd5}\x9d:rF\x81\x0c\xc0v5r\x17\x14\xaak\x93o\
+	                                                                                                 xd8\x1f\xa1iHw[\x03o-a\x8e9\x90\xea0cF\xb4\x1a.IT\x8a\x
+	                                                                                                 fc\x98+\xff\xc4\x179+c\x96\xd2o\xbc\xb6c\x8b\x94I#\xb4A
+	                                                                                                 \xc5\xfc\xbc\xcf\x83\xbfA\xde\x8dA\xa3\xf2\xea\xb3 ^${\
+	                                                                                                 x0f\x83\xaf\x13\xd0\xb8\xb4d\x84\xf7\xac\xab\xaa\'\xbd\
+	                                                                                                 x17\x92\xa6\\\xae\xbf\x82\x14A\x86x\xf5\xb7v\xd9\xa1\xb
+	                                                                                                 d*\xbe_\x98\xf4\x85\x0fQ\x820\x914\xb8\xf3;\xfe+\xb5\xd
+	                                                                                                 e\x8d\xf8m\xd9\xb4\xa3`\xc4\x9d\xf1\x8d\xc8b5\xa8\x8c\x
+	                                                                                                 aa\xf8\x93\xc0K\xfc\x0f\xb5p,\x92\xcb\x1f\xc1\x99:\xd6Y
+	                                                                                                 \xc3\xb2\xb1\xa2\xc7o\xd4\x94\xf8\xfdB>\x10\xf4=\x13\xa
+	                                                                                                 9\xe7J\xec"\xe2S\x1a! +\xd2\x92Uhr\x00mNO\rcw\xb9\xf1\x
+	                                                                                                 1d\x94T\xe5\xa1L\x97\xe9\xb1-\xba\x10\x92\xfc\x96\xad\x
+	                                                                                                 ee\xfb\xa9#\xe5\x9bGJ\x83>\rx\xb5\\\xb7\xc7\x16\xd2>\xe
+	                                                                                                 a\x192\xf5\xc2+\xf9Z\xa4{*?\xed\x0b\xe5\xfb\x0cl9\xe1u\
+	                                                                                                 xfaN\x99(\xf9\xbaw\xc3t\xda\x06\x81\xb7\x9f\xb4\r\xadq\
+	                                                                                                 xb2\x07E&\xb7\xa3\xe7\xf4d\x9c\xaa\xaap\x89\xd0\x96\x9e
+	                                                                                                 \xbf^\x9d\x8b\xff\xc31\xf1\x98\x0b\x1fz"\xe7b\xea%\xf4\
+	                                                                                                 xef\x077\xb5\x05B\xc8\x7f\xa6\x16\xca\xbf0\x9eCQ^\xf8\r
+	                                                                                                 \t\xe5Vz\xa3\xd6X\xbaXk?\xc7P\xdd\xac\xd4\xa1H\xb6n\xa9
+	                                                                                                 \xa0\x9e\xaeq\xba\xe5\xe0\'\x12\xa6\xce\x14\xecJ\x1c\x8
+	                                                                                                 e\x12\xfc\xc9\xec\xcbM-\xb3\xc0v_\xeaAw(f\x86\x8d\ne\xb
+	                                                                                                 9?\x14F6nT$\xaf\x13\xe0`\xc9\xde\xaa\xbb\xf3M\x98\x9avl
+	                                                                                                 \xb5\xdb\xadn\x82o\x19\xf2h\xdc\xb9'
+	fake.boolean(chance_of_getting_true=50)                                                        # False
+	fake.language_code()                                                                           # mhr
+	fake.locale()                                                                                  # csb_PL
+	fake.md5(raw_output=False)                                                                     # 1ef6c31a47efaa321bfe960bbae263ed
+	fake.null_boolean()                                                                            # None
+	fake.password(length=10, special_chars=True, digits=True, upper_case=True, lower_case=True)    # N)7VsbS07+
+	fake.sha1(raw_output=False)                                                                    # b886d2c4aab0e9d9a28c569e2711c9abffac5ef0
+	fake.sha256(raw_output=False)                                                                  # 0261ee65114cd756b7d5d268d9a7e789c75cc9ef1e2e7b12b367e5a
+	                                                                                                 5c765a3cb
+	fake.uuid4()                                                                                   # d78e56ac-8ae5-7bd7-c8b4-54f81e63b074
+
+### faker.providers.person
+
+	fake.first_name()                                                                              # Kimberly
+	fake.first_name_female()                                                                       # Christine
+	fake.first_name_male()                                                                         # Donald
+	fake.last_name()                                                                               # Smith
+	fake.last_name_female()                                                                        # Holmes
+	fake.last_name_male()                                                                          # Wall
+	fake.name()                                                                                    # George Ross
+	fake.name_female()                                                                             # Linda Williams
+	fake.name_male()                                                                               # Jay Brown
+	fake.prefix()                                                                                  # Miss
+	fake.prefix_female()                                                                           # Mrs.
+	fake.prefix_male()                                                                             # Mr.
+	fake.suffix()                                                                                  # DDS
+	fake.suffix_female()                                                                           # MD
+	fake.suffix_male()                                                                             # DVM
+
+### faker.providers.phone_number
+
+	fake.msisdn()                                                                                  # 4782873696306
+	fake.phone_number()                                                                            # 1-299-617-7880x472
+
+### faker.providers.profile
+
+	fake.profile(fields=None, sex=None)                                                            # {'job': 'Copy', 'company': 'Mejia, Reynolds and Walker'
+	                                                                                                 , 'ssn': '848-62-0357', 'residence': '6302 Samantha Mea
+	                                                                                                 dow\nNathanberg, GU 57013-7112', 'current_location': (D
+	                                                                                                 ecimal('-23.163848'), Decimal('107.332509')), 'blood_gr
+	                                                                                                 oup': 'AB-', 'website': ['https://andrews.com/', 'https
+	                                                                                                 ://long.com/'], 'username': 'barbaramendoza', 'name': '
+	                                                                                                 Dana Thompson', 'sex': 'F', 'address': '109 Garcia Mill
+	                                                                                                 s\nWest Benjaminmouth, AS 52441', 'mail': 'arianabarnes
+	                                                                                                 @gmail.com', 'birthdate': '2004-12-15'}
+	fake.simple_profile(sex=None)                                                                  # {'username': 'marcus97', 'name': 'Michelle Gentry', 'se
+	                                                                                                 x': 'F', 'address': '629 Yolanda Point\nWest Kevinland,
+	                                                                                                  MN 10046', 'mail': 'joseph24@hotmail.com', 'birthdate'
+	                                                                                                 : '2003-09-19'}
+
+### faker.providers.python
+
+	fake.pybool()                                                                                  # False
+	fake.pydecimal(left_digits=None, right_digits=None, positive=False)                            # -7056220037.61
+	fake.pydict(nb_elements=10, variable_nb_elements=True, *value_types)                           # {'porro': 'fnTpammfdfqXhYRqVJsd', 'eum': datetime.datet
+	                                                                                                 ime(1984, 2, 13, 23, 17, 21), 'consequatur': 'YYmktQYgU
+	                                                                                                 XbgpskJSiLg', 'ducimus': 5433, 'quia': -932540857753009
+	                                                                                                 .0, 'culpa': Decimal('-246.73'), 'similique': 246900586
+	                                                                                                 481486.0, 'animi': Decimal('-1785747931.0'), 'impedit':
+	                                                                                                  'http://douglas.info/', 'dolor': 'YcfMaVHCEzNoRzIjceTz
+	                                                                                                 ', 'odio': datetime.datetime(1991, 5, 16, 22, 34, 47), 
+	                                                                                                 'expedita': 'http://johnson.com/terms.htm'}
+	fake.pyfloat(left_digits=None, right_digits=None, positive=False)                              # 3120109760325.0
+	fake.pyint()                                                                                   # 9155
+	fake.pyiterable(nb_elements=10, variable_nb_elements=True, *value_types)                       # ['ztDuLgXHKVgrRezNWdrp', 6684, Decimal('3.62599482601')
+	                                                                                                 , datetime.datetime(2012, 6, 23, 5, 56, 51), 'sYmlTDpCH
+	                                                                                                 mkgFGhJmwnZ', 'tDntSkiBAtKKezmdEZOy', 'YPEHPpnqkxtEQFyS
+	                                                                                                 ajvZ', 'nMPNwgWCkXVpSNtyaLAM', 56805554233.8, 'tGKPDmbu
+	                                                                                                 CSTlItVgLLNM', 1538034668209.22]
+	fake.pylist(nb_elements=10, variable_nb_elements=True, *value_types)                           # ['yJMHluliqCjkAJSIppES', 'JIAKotybQYDIDLwEwFQc', 7565, 
+	                                                                                                 'bBuTGmaFXHodrRCTYfpX', 'ffuller@gmail.com', 865, 'wcvu
+	                                                                                                 ImQsttpOIEfnjbbj', 'fPYyGLOWhhomNHTkdkir', datetime.dat
+	                                                                                                 etime(2002, 10, 23, 2, 46, 53), 161.0]
+	fake.pyset(nb_elements=10, variable_nb_elements=True, *value_types)                            # {Decimal('-897173717609418.0'), 'rtukDsrVDhAKpnLOOhzf',
+	                                                                                                  261, Decimal('2254401.72294'), 'BZuymVmzwhVggPvmxuqR',
+	                                                                                                  2254, 5998, 'rebecca28@salazar-hill.org', 'ekjGmlUmUJm
+	                                                                                                 DoVBFECqb', 'http://www.robinson.com/tags/main/blog/abo
+	                                                                                                 ut.htm', 'spencer81@hotmail.com'}
+	fake.pystr(min_chars=None, max_chars=20)                                                       # zrkxFBowpUsXqVcIUsre
+	fake.pystruct(count=10, *value_types)                                                          # ([Decimal('355529028725395.0'), 'http://golden.biz/auth
+	                                                                                                 or/', 'http://www.berger.net/search/terms/', datetime.d
+	                                                                                                 atetime(2010, 3, 16, 17, 3, 41), 'InXQHEhnnshlZDsgfXBu'
+	                                                                                                 , 4643, 7124, 9575, 'rfZZOOaZSDNEfTVdeLtz', -2768665492
+	                                                                                                 6903.0], {'laborum': 'AFXjXjDzepJIwHeqqvxW', 'suscipit'
+	                                                                                                 : 7940, 'in': 'vnDPYHfdGlxcBpUYmdGq', 'repudiandae': 77
+	                                                                                                 19, 'cum': 'dale72@patel.org', 'debitis': 'antonioquinn
+	                                                                                                 @ingram-roberts.com', 'est': Decimal('6.4'), 'sunt': 'q
+	                                                                                                 lYvojRdSFiPvwnObKYS', 'vel': 'venfsdcCZHeLWupQqaGd'}, {
+	                                                                                                 'hic': {0: 'xhXQuniLZpENwdnKVoYD', 1: ['cWvaVMHLxcvQHNn
+	                                                                                                 uoSzc', 2330, 'oZntslMxHhVOfiaMtcDi'], 2: {0: Decimal('
+	                                                                                                 2832787514.5'), 1: 'fischersandra@hotmail.com', 2: [282
+	                                                                                                 71618341.0, 'ernJGzGzCDYEqMStVWkA']}}, 'repellendus': {
+	                                                                                                 1: 'IIrmgpUvbeWvCzFprUab', 2: ['coreyanderson@foster.co
+	                                                                                                 m', 'BbaxOosxekBTvxYJuYjx', 935265843431.0], 3: {1: 'cd
+	                                                                                                 idVvSHYLTXWbGOFBfS', 2: datetime.datetime(2006, 7, 23, 
+	                                                                                                 4, 22, 41), 3: [6729, datetime.datetime(1971, 8, 7, 14,
+	                                                                                                  45, 30)]}}, 'id': {2: datetime.datetime(1996, 11, 18, 
+	                                                                                                 18, 38, 46), 3: ['bGAjRkynFuXYXxCDSQyi', 'WCMoiotHnlkqq
+	                                                                                                 DBiVrSA', 3675], 4: {2: 'abigailmoreno@hotmail.com', 3:
+	                                                                                                  datetime.datetime(1984, 10, 22, 15, 26, 54), 4: ['hipV
+	                                                                                                 DMOUFqwHMywVEMhT', 5763046.356]}}, 'dicta': {3: datetim
+	                                                                                                 e.datetime(1980, 10, 13, 11, 23, 12), 4: ['http://www.t
+	                                                                                                 hompson.net/', 'mOdycpzzvBJONnyNPDvy', 'RCWlrNhZMQDFfvq
+	                                                                                                 JRXFe'], 5: {3: 5992, 4: 'http://www.byrd.org/list/home
+	                                                                                                 /', 5: [4740, 'vNtfjKDUhVXPcnvajOaV']}}, 'similique': {
+	                                                                                                 4: datetime.datetime(2001, 3, 27, 16, 39, 53), 5: ['lci
+	                                                                                                 mgdNmdeiNqtShHtUS', 7444, 'AkqmnhpvebQFNwlZmGqS'], 6: {
+	                                                                                                 4: 'hqkKCAYgUaJTGesgaavd', 5: 'https://www.hernandez.co
+	                                                                                                 m/register/', 6: [6377, Decimal('-6071331742.1748')]}},
+	                                                                                                  'nihil': {5: 'sjohnson@gmail.com', 6: [datetime.dateti
+	                                                                                                 me(1972, 3, 8, 15, 38, 3), 7046, 'zlZjxQyTdtDlAKZFWoBd'
+	                                                                                                 ], 7: {5: Decimal('-942.20849'), 6: datetime.datetime(2
+	                                                                                                 009, 3, 31, 9, 21, 43), 7: [datetime.datetime(1978, 9, 
+	                                                                                                 30, 8, 52, 29), 'FxohawHcGWGZCVuoHctZ']}}, 'quo': {6: -
+	                                                                                                 749439696.0, 7: [386, 'sarah60@mccall.biz', 'ztOjZfjYhq
+	                                                                                                 mjMyEJRFgW'], 8: {6: 'https://www.austin.net/category.h
+	                                                                                                 tml', 7: 'UrYCWXEYkZuHqEBNUSLh', 8: ['OVhYXpQkLjdqsemzg
+	                                                                                                 xsD', 'https://cox.com/faq.html']}}, 'doloremque': {7: 
+	                                                                                                 'YvZDKpaScTPdEHXQsMqa', 8: ['KMoczwHbSlbDSSSfKjVS', 879
+	                                                                                                 8, 55792555066.823], 9: {7: 'AdDFIKxYPKQlpTiVWWdC', 8: 
+	                                                                                                 'https://www.charles.com/search/app/posts/home.jsp', 9:
+	                                                                                                  [-76507085546.6, 'ovbjwEYdkZzqmRldStJO']}}, 'porro': {
+	                                                                                                 8: 'https://www.martinez.com/main.asp', 9: [9026, datet
+	                                                                                                 ime.datetime(2012, 5, 4, 16, 52, 36), 1668], 10: {8: 80
+	                                                                                                 10, 9: 'teresajohnson@yahoo.com', 10: [4428, 'WprUPLUlt
+	                                                                                                 jkYHXOBCmrV']}}, 'cumque': {9: 'TogqRXLBTijSiKOeeWtK', 
+	                                                                                                 10: ['DpkvteavlIkgnfxfgvzy', 'wmovuXHZMfgVEvIZSOKy', da
+	                                                                                                 tetime.datetime(1988, 6, 3, 10, 59, 41)], 11: {9: 'http
+	                                                                                                 ://www.morales.com/main/', 10: 'ygSxHFGWHBSKLXjuzFXA', 
+	                                                                                                 11: [2551, Decimal('-58665.971')]}}})
+	fake.pytuple(nb_elements=10, variable_nb_elements=True, *value_types)                          # (2081, -120.919495328, 1553, Decimal('-61.3830996'), 'o
+	                                                                                                 RkklExEehvUkemRsoAH', 'KVaSXFhiQMUvovjXNvtt', 'iromero@
+	                                                                                                 hotmail.com', 'antoniorivera@jacobs-briggs.com', 1533, 
+	                                                                                                 'whyWQoTqSmpJnctABwLY')
+
+### faker.providers.ssn
+
+	fake.ssn()                                                                                     # 167-78-5838
+
+### faker.providers.user_agent
+
+	fake.chrome(version_from=13, version_to=63, build_from=800, build_to=899)                      # Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_11_4) AppleW
+	                                                                                                 ebKit/5350 (KHTML, like Gecko) Chrome/56.0.819.0 Safari
+	                                                                                                 /5350
+	fake.firefox()                                                                                 # Mozilla/5.0 (Windows NT 5.2; kk-KZ; rv:1.9.2.20) Gecko/
+	                                                                                                 2011-11-07 15:01:48 Firefox/15.0
+	fake.internet_explorer()                                                                       # Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.0; Trid
+	                                                                                                 ent/5.1)
+	fake.linux_platform_token()                                                                    # X11; Linux x86_64
+	fake.linux_processor()                                                                         # x86_64
+	fake.mac_platform_token()                                                                      # Macintosh; U; PPC Mac OS X 10_12_3
+	fake.mac_processor()                                                                           # Intel
+	fake.opera()                                                                                   # Opera/8.47.(Windows NT 5.0; byn-ER) Presto/2.9.162 Vers
+	                                                                                                 ion/10.00
+	fake.safari()                                                                                  # Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/53
+	                                                                                                 1.41.4 (KHTML, like Gecko) Version/5.1 Safari/531.41.4
+	fake.user_agent()                                                                              # Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/5350 (KHTML
+	                                                                                                 , like Gecko) Chrome/44.0.879.0 Safari/5350
+	fake.windows_platform_token()                                                                  # Windows NT 5.01
+
+## LANGUAGE en_GB
+
+### faker.providers.address
+
+	fake.address()                                                                                 # 646 Arnold oval
+	                                                                                                 New Elaine
+	                                                                                                 G5U 5JP
+	fake.building_number()                                                                         # 00
+	fake.city()                                                                                    # New Donna
+	fake.city_prefix()                                                                             # East
+	fake.city_suffix()                                                                             # fort
+	fake.country()                                                                                 # Syrian Arab Republic
+	fake.country_code()                                                                            # KR
+	fake.geo_coordinate(center=None, radius=0.001)                                                 # -72.149102
+	fake.latitude()                                                                                # 23.601874
+	fake.longitude()                                                                               # -55.622819
+	fake.postcode()                                                                                # S12 1ZJ
+	fake.secondary_address()                                                                       # Flat 99
+	fake.street_address()                                                                          # 972 Nicholson avenue
+	fake.street_name()                                                                             # Tony estate
+	fake.street_suffix()                                                                           # shoal
+
+### faker.providers.automotive
+
+	fake.license_plate()                                                                           # OW42SCC
+
+### faker.providers.bank
+
+	fake.bank_country()                                                                            # GB
+	fake.bban()                                                                                    # ZEYW6425264280561
+	fake.iban()                                                                                    # GB67JYPI7996915988572
+
+### faker.providers.barcode
+
+	fake.ean(length=13)                                                                            # 3363788035358
+	fake.ean13()                                                                                   # 3885537944525
+	fake.ean8()                                                                                    # 45404399
+
+### faker.providers.color
+
+	fake.color_name()                                                                              # Sienna
+	fake.hex_color()                                                                               # #745ea3
+	fake.rgb_color()                                                                               # 236,234,64
+	fake.rgb_css_color()                                                                           # rgb(138,120,240)
+	fake.safe_color_name()                                                                         # purple
+	fake.safe_hex_color()                                                                          # #998800
+
+### faker.providers.company
+
+	fake.bs()                                                                                      # target clicks-and-mortar e-business
+	fake.catch_phrase()                                                                            # Programmable zero-defect initiative
+	fake.company()                                                                                 # Harris-Barber
+	fake.company_suffix()                                                                          # Inc
+
+### faker.providers.credit_card
+
+	fake.credit_card_expire(start="now", end="+10y", date_format="%m/%y")                          # 06/23
+	fake.credit_card_full(card_type=None)                                                          # Diners Club / Carte Blanche
+	                                                                                                 Kirsty Griffiths
+	                                                                                                 30483026773855 07/24
+	                                                                                                 CVC: 839
+	fake.credit_card_number(card_type=None)                                                        # 180083263881664
+	fake.credit_card_provider(card_type=None)                                                      # Diners Club / Carte Blanche
+	fake.credit_card_security_code(card_type=None)                                                 # 457
+
+### faker.providers.currency
+
+	fake.cryptocurrency()                                                                          # ('TRX', 'TRON')
+	fake.cryptocurrency_code()                                                                     # TRX
+	fake.cryptocurrency_name()                                                                     # NEO
+	fake.currency()                                                                                # ('OMR', 'Omani rial')
+	fake.currency_code()                                                                           # XPF
+	fake.currency_name()                                                                           # Sudanese pound
+
+### faker.providers.date_time
+
+	fake.am_pm()                                                                                   # AM
+	fake.century()                                                                                 # VI
+	fake.date(pattern="%Y-%m-%d", end_datetime=None)                                               # 2001-10-15
+	fake.date_between(start_date="-30y", end_date="today")                                         # 1999-04-02
+	fake.date_between_dates(date_start=None, date_end=None)                                        # 2018-05-09
+	fake.date_object(end_datetime=None)                                                            # 1979-10-18
+	fake.date_this_century(before_today=True, after_today=False)                                   # 2016-11-07
+	fake.date_this_decade(before_today=True, after_today=False)                                    # 2017-06-29
+	fake.date_this_month(before_today=True, after_today=False)                                     # 2018-05-05
+	fake.date_this_year(before_today=True, after_today=False)                                      # 2018-04-29
+	fake.date_time(tzinfo=None, end_datetime=None)                                                 # 2004-03-11 22:18:52
+	fake.date_time_ad(tzinfo=None, end_datetime=None)                                              # 0661-07-18 12:44:40
+	fake.date_time_between(start_date="-30y", end_date="now", tzinfo=None)                         # 2015-10-22 03:13:59
+	fake.date_time_between_dates(datetime_start=None, datetime_end=None, tzinfo=None)              # 2018-05-09 21:36:48
+	fake.date_time_this_century(before_now=True, after_now=False, tzinfo=None)                     # 2016-06-10 14:38:07
+	fake.date_time_this_decade(before_now=True, after_now=False, tzinfo=None)                      # 2015-08-11 10:11:36
+	fake.date_time_this_month(before_now=True, after_now=False, tzinfo=None)                       # 2018-05-07 15:06:16
+	fake.date_time_this_year(before_now=True, after_now=False, tzinfo=None)                        # 2018-02-06 15:18:42
+	fake.day_of_month()                                                                            # 19
+	fake.day_of_week()                                                                             # Monday
+	fake.future_date(end_date="+30d", tzinfo=None)                                                 # 2018-05-23
+	fake.future_datetime(end_date="+30d", tzinfo=None)                                             # 2018-05-22 13:05:05
+	fake.iso8601(tzinfo=None, end_datetime=None)                                                   # 1997-07-18T04:57:12
+	fake.month()                                                                                   # 12
+	fake.month_name()                                                                              # August
+	fake.past_date(start_date="-30d", tzinfo=None)                                                 # 2018-05-06
+	fake.past_datetime(start_date="-30d", tzinfo=None)                                             # 2018-05-02 02:51:26
+	fake.time(pattern="%H:%M:%S", end_datetime=None)                                               # 23:46:16
+	fake.time_delta(end_datetime=None)                                                             # 6391 days, 2:30:51
+	fake.time_object(end_datetime=None)                                                            # 17:07:49
+	fake.time_series(start_date="-30d", end_date="now", precision=None, distrib=None, tzinfo=None) # <generator object Provider.time_series at 0x0355BDE0>
+	fake.timezone()                                                                                # Africa/Libreville
+	fake.unix_time(end_datetime=None)                                                              # 487452172
+	fake.year()                                                                                    # 1973
+
+### faker.providers.file
+
+	fake.file_extension(category=None)                                                             # csv
+	fake.file_name(category=None, extension=None)                                                  # reprehenderit.wav
+	fake.file_path(depth=1, category=None, extension=None)                                         # /voluptate/dicta.odt
+	fake.mime_type(category=None)                                                                  # message/rfc822
+	fake.unix_device(prefix=None)                                                                  # /dev/xvds
+	fake.unix_partition(prefix=None)                                                               # /dev/sdp3
+
+### faker.providers.internet
+
+	fake.ascii_company_email(*args, **kwargs)                                                      # chelsea79@wallace.com
+	fake.ascii_email(*args, **kwargs)                                                              # marcscott@coates-french.info
+	fake.ascii_free_email(*args, **kwargs)                                                         # mark96@yahoo.com
+	fake.ascii_safe_email(*args, **kwargs)                                                         # abennett@example.com
+	fake.company_email(*args, **kwargs)                                                            # pchambers@harrison-james.com
+	fake.domain_name(*args, **kwargs)                                                              # shaw.com
+	fake.domain_word(*args, **kwargs)                                                              # patel
+	fake.email(*args, **kwargs)                                                                    # tina24@hotmail.com
+	fake.free_email(*args, **kwargs)                                                               # george83@yahoo.com
+	fake.free_email_domain(*args, **kwargs)                                                        # yahoo.com
+	fake.image_url(width=None, height=None)                                                        # https://dummyimage.com/548x567
+	fake.ipv4(network=False, address_class=None, private=None)                                     # 172.183.97.27
+	fake.ipv4_network_class()                                                                      # c
+	fake.ipv4_private(network=False, address_class=None)                                           # 10.185.140.42
+	fake.ipv4_public(network=False, address_class=None)                                            # 9.245.204.21
+	fake.ipv6(network=False)                                                                       # c260:20:af72:ca8e:4a5b:143f:4e51:a4d1
+	fake.mac_address()                                                                             # 5d:92:68:b7:9d:0f
+	fake.safe_email(*args, **kwargs)                                                               # operry@example.net
+	fake.slug(*args, **kwargs)                                                                     # minima-eveniet-fuga
+	fake.tld()                                                                                     # com
+	fake.uri()                                                                                     # http://www.preston.com/search/tags/list/privacy.htm
+	fake.uri_extension()                                                                           # .html
+	fake.uri_page()                                                                                # index
+	fake.uri_path(deep=None)                                                                       # search/list/categories
+	fake.url(schemes=None)                                                                         # http://www.perry.info/
+	fake.user_name(*args, **kwargs)                                                                # coxdanielle
+
+### faker.providers.isbn
+
+	fake.isbn10(separator="-")                                                                     # 0-548-11729-2
+	fake.isbn13(separator="-")                                                                     # 978-0-04-365157-5
+
+### faker.providers.job
+
+	fake.job()                                                                                     # Scientist, marine
+
+### faker.providers.lorem
+
+	fake.paragraph(nb_sentences=3, variable_nb_sentences=True, ext_word_list=None)                 # Debitis vero veritatis cupiditate numquam fugit. Delect
+	                                                                                                 us nesciunt mollitia hic reprehenderit quam. Vel minus 
+	                                                                                                 culpa repellendus autem quo.
+	fake.paragraphs(nb=3, ext_word_list=None)                                                      # ['Repudiandae perferendis quaerat maxime provident aspe
+	                                                                                                 riores. Veniam rem sequi harum. Nesciunt inventore pers
+	                                                                                                 piciatis.', 'Molestiae neque pariatur culpa laudantium 
+	                                                                                                 sit quisquam. Soluta dolores expedita commodi maiores q
+	                                                                                                 uam.', 'Reprehenderit esse veritatis qui similique dign
+	                                                                                                 issimos iste. Ipsa dignissimos adipisci odio iste disti
+	                                                                                                 nctio explicabo odit. Repellendus totam error fugiat fu
+	                                                                                                 ga.']
+	fake.sentence(nb_words=6, variable_nb_words=True, ext_word_list=None)                          # Consequatur quidem quia.
+	fake.sentences(nb=3, ext_word_list=None)                                                       # ['Ab ipsam repellendus est.', 'Ex aspernatur autem exer
+	                                                                                                 citationem.', 'Laudantium est at.']
+	fake.text(max_nb_chars=200, ext_word_list=None)                                                # Quo ullam unde in delectus nam. Vel praesentium invento
+	                                                                                                 re impedit explicabo placeat voluptatibus.
+	                                                                                                 Magnam quas quaerat iure velit dolores delectus.
+	fake.word(ext_word_list=None)                                                                  # veritatis
+	fake.words(nb=3, ext_word_list=None)                                                           # ['repellendus', 'reiciendis', 'consequatur']
+
+### faker.providers.misc
+
+	fake.binary(length=1048576)                                                                    # b'\x975R\x872j\xb94\xab\xaf\x8b\x14>\x80-\x19\x02\xdf\x
+	                                                                                                 871K\xaf\x1d#\xe8\xa4\xd2\xafd\x86D\x0f\xb8\xb9\x8cg\xa
+	                                                                                                 a\xf1\xac\x07\x86}\xa0\x87bP,\xa7}~v\x19?\xb4\xd3\xd0\x
+	                                                                                                 1aS5zJZ\xce\xb0\xcf\xf9\xd4\xce\xd8\x82\xbed\n\x10tl\xe
+	                                                                                                 bN\x17\x96lZ\xbb\x8f*\x87\xe3\x9b\xc2\xdch\xf7\x1an\xca
+	                                                                                                 d)O\x02\xf9\xefFL\xa5>y\x01\xb8`\xf6\x14\xfd\xad|\x91y\
+	                                                                                                 x1fG3\x85)\xe5\xfa\xdf\xe6\xfd\x86\x16p\x1eX\x90b\xfc\x
+	                                                                                                 bc\x1e\x99\x80@\xda\x0c5Z\xc8\x9c\xc3\xed\x06A\xac\xd1Z
+	                                                                                                 g\x83\x9bk\x1d#M\xd7=\xe0\xe2*\x89P\xae\xae%\x87\x11\xb
+	                                                                                                 1%J\x00\x1c\x97>\x94\x9a\xd4\xc9Y\x9e\x8e51\x18\xe0\x1b
+	                                                                                                 \xb9\x9b|X\r\x83;(\x03\x8f\xe8u\xd6\r\xe7\x95\xfd\xd74\
+	                                                                                                 xfa{\xd6b\x01\xf1\x1a\x91\xa0\xaaF\x93\xeeXy\x1eN\x8d\x
+	                                                                                                 be\xa7cQUc\xb9\xaf\xa8kg\x0epr4\x01\xafUa\x12\xd3\x8eR7
+	                                                                                                 \xadC\xfcc[/\xb85`\xf5\xd3T\x99}\xc1|\xf1\xdc\x97\x85\x
+	                                                                                                 8ehi?A~\xa1\xac\xd5(\x8d\xdb\xc74\x9f\x06\xbbl8\x02\x8d
+	                                                                                                 \xf2\xd2\xed \x8d\xa8U\x7f?\xdd\xf0+X\x8fS\xfc\x11\xbe\
+	                                                                                                 xa7\x86P( \xb5\t\xa2)u\xd9\xf7\xf8\xe8gd\x9dy\x96\\L=\x
+	                                                                                                 ff\'~\x0f\xfd\xca`\xd3\xceX\xfaj$,\xd0Yq\xe8\xbb$\xd3\x
+	                                                                                                 dd\x9dA\xca6-\x90\xfa{\xe1\xdc\xc1c\x06\xd8\x8c\xe15\xf
+	                                                                                                 7>\x91\x92X\xc7\xee\xb6\x86{\x08\xe9\xe2\x14\x85\xa5\xc
+	                                                                                                 b\xd8J\xa4^K\xd9\x08\x96\x19\xa0M:.\xbfq\xfd\n\x0e\x1d\
+	                                                                                                 xf6\xcc.\xa5\xab\xbf\xc1\x1c_\x96U\xa2\x0cYe\xd7\x1b\xf
+	                                                                                                 7\xe7\x18)\t\xfb\xc6\xf5(\x17\xda\xd7\x9c\x98\x907\x8f\
+	                                                                                                 x87\xd4\xcft\xb8~\xbf\xf4].\xc1\xc6\xec\xe8\x91\x15\x1e
+	                                                                                                 \xd8\xb1\xa8\xddg:\x9a1\x03\xc5\xd6z\xa4\xdc\xc4\xff\x9
+	                                                                                                 6\x81w\xf3\xb9\x9a\xfa\xf8\xa0\xa7\x8dH0\xeb\xb5\x07\x8
+	                                                                                                 a&0\x9c(\xaf\xb0\xd3C\x1b\x19".)\xd3/0\x015\x88H=\x0fO4
+	                                                                                                 B\x97L\xcfq0\xfc\xb0M?W\xa4\x19\xc5\x85v\x1f\x92\xea\xe
+	                                                                                                 7[\xbb (\t\xf6\xf6\xb01\xbb1`\xc8\xc3+\xa9\xad\x85&[\x9
+	                                                                                                 f\xbb#\xaa\x8d\'\x8f,u\xc4\xc3\x8d\x99cn\x06\x8c\x14\x9
+	                                                                                                 0\xd8Y6\xfd\xddE\xb5\xcch\xdd}\xb9\x93lC\x13\xd5\xbd\xb
+	                                                                                                 c\xed\xa1\xbc\xf9\xbe\xf8\x18\xacNb~\xc8j\xd47\xcc\xc4\
+	                                                                                                 x8e\xd7\xa5\x96QV\xfc\xedUz{\xf3\x93{\x06q\xd3\x89\xcdc
+	                                                                                                 c\xa4\x9cS\xac\xf7\x15\xb1*\x94Bn\xf90H\xdbc\xf0\xd1\x7
+	                                                                                                 f\x7f\xb9\xd0\x1a#\x97\x93yT\x97!\x0e9a\x93/J\xe1~l\xa6
+	                                                                                                 \xcb\xa7\x05\x972\x90\xbc\xf7\xf6n\xc8|\xc8\t\x0b*/\xd6
+	                                                                                                 \xf7\xf97"\xa2\xd8h{\xaa\xba/\t\xa2\x1dK\x95a\x1dR\xf5K
+	                                                                                                 \x01\x83\xc6\xbc\x8d\xbfzI0\xd0\xea\xc0j*^\x13t\xfdO-P\
+	                                                                                                 xea\xad\xc4\x9b&\xfd*\xcfO\x19\xd2L~\xd3z\xda:\xac\xd7\
+	                                                                                                 xd4\xb4.z\x11n\xb8\n\x87;\xcb\xff\x15\xcdJ\x9a\x99sj\xa
+	                                                                                                 31\xaf/\xb8o/\x9b\x1f\x93(\x90\xbd=\x15\xd7l\xad\t\x18u
+	                                                                                                 \x8b\x11\x16\xb4\x90\xb6\xcf\x0ey&\x82%\xa8=\xea\xb8=\x
+	                                                                                                 bcN\x9e\xef\r\xacde\x94\x06\xd8\xde\xc3\x1c\xe1t\x0c\xa
+	                                                                                                 9Q\xa2[\xa5\x0c\xd0\xf2\xd7\xe0\x7f\x9e\xffjltHK\xb7^\x
+	                                                                                                 f3\x8f\x05|a\x07n\xd5ab\x8d\x8ak^T\xff\xb3\x06&\x98\x9e
+	                                                                                                 \xba\xe5\x84Q\xb9/\x9dA\xfb1_\x10\xc2\xca\x1eJ6<\x82\xd
+	                                                                                                 9\x04\x9a7\xc1\xb0\xf8q\xfe+?x/\xe9\x96\xf6\x1a\xc4n6\x
+	                                                                                                 d8K\n&\xb5\'\xb1\x08Aj\xf0\x99;\x1f\xd1~\xa76\xa0ff\xb3
+	                                                                                                 >L\xec\x85"lN\xf8\xc3e\t(\xce\xac\xffN\xb3\xc3ju\xb7f\x
+	                                                                                                 c6H~Q\xa4!\xc7:\x9e\xf3\xd8Wb\r&\x00\x9cF\xb1\x94h\x19\
+	                                                                                                 x1f\xca\xa23\xef\xb4\x19/\xa8\xe4[>d\xa8\xcbp0Y\x90\xcd
+	                                                                                                 \x829r\xaa\xa5\x16xz\x83.nv\xa2D(\xbbW\xea\x91[\r\xcan\
+	                                                                                                 xf7)\x0c/\xd6\x82\r5\xd450'
+	fake.boolean(chance_of_getting_true=50)                                                        # False
+	fake.language_code()                                                                           # gv
+	fake.locale()                                                                                  # raj_IN
+	fake.md5(raw_output=False)                                                                     # 812fe12e8d488646da8fac6b1695f0d3
+	fake.null_boolean()                                                                            # True
+	fake.password(length=10, special_chars=True, digits=True, upper_case=True, lower_case=True)    # G)562qQz%A
+	fake.sha1(raw_output=False)                                                                    # a27f653838077a9a8dd0245fa49045ee187c0b55
+	fake.sha256(raw_output=False)                                                                  # 2477beb907c3c093fe71d7d09cb6de28648d20b13d27c6c88297517
+	                                                                                                 4eb37a703
+	fake.uuid4()                                                                                   # 82bcf7ab-f5ae-a0cc-2686-c74765869cd7
+
+### faker.providers.person
+
+	fake.first_name()                                                                              # Jayne
+	fake.first_name_female()                                                                       # Claire
+	fake.first_name_male()                                                                         # Allan
+	fake.last_name()                                                                               # Morris
+	fake.last_name_female()                                                                        # Donnelly
+	fake.last_name_male()                                                                          # Baxter
+	fake.name()                                                                                    # Jennifer Harper
+	fake.name_female()                                                                             # Mrs. Dorothy Griffiths
+	fake.name_male()                                                                               # Howard Roberts
+	fake.prefix()                                                                                  # Miss
+	fake.prefix_female()                                                                           # Miss
+	fake.prefix_male()                                                                             # Dr.
+
+### faker.providers.phone_number
+
+	fake.cellphone_number()                                                                        # +44(0)7700900058
+	fake.msisdn()                                                                                  # 5829224132910
+	fake.phone_number()                                                                            # (0808)1570553
+
+### faker.providers.profile
+
+	fake.profile(fields=None, sex=None)                                                            # {'job': 'IT technical support officer', 'company': 'Wil
+	                                                                                                 kinson and Sons', 'ssn': 'ZZ 29 45 93 T', 'residence': 
+	                                                                                                 'Flat 2\nGraeme trail\nDianechester\nSA5 5FP', 'current
+	                                                                                                 _location': (Decimal('-46.211431'), Decimal('-107.80822
+	                                                                                                 2')), 'blood_group': '0-', 'website': ['http://www.youn
+	                                                                                                 g-burke.info/', 'http://obrien-brooks.com/', 'https://w
+	                                                                                                 ww.hall.info/'], 'username': 'carrollalison', 'name': '
+	                                                                                                 Dawn Ryan-Harvey', 'sex': 'F', 'address': '2 Lydia heig
+	                                                                                                 hts\nSouth Kellychester\nB2 8RY', 'mail': 'wbooth@hotma
+	                                                                                                 il.com', 'birthdate': '1973-03-18'}
+	fake.simple_profile(sex=None)                                                                  # {'username': 'gwilkinson', 'name': 'Mr. Gerald Ali', 's
+	                                                                                                 ex': 'F', 'address': '265 Luke lodge\nSouth Hannahtown\
+	                                                                                                 nN8 3GP', 'mail': 'tcarter@gmail.com', 'birthdate': '20
+	                                                                                                 13-11-26'}
+
+### faker.providers.python
+
+	fake.pybool()                                                                                  # False
+	fake.pydecimal(left_digits=None, right_digits=None, positive=False)                            # 227630133396077.0
+	fake.pydict(nb_elements=10, variable_nb_elements=True, *value_types)                           # {'repellat': datetime.datetime(1982, 10, 24, 5, 52), 'a
+	                                                                                                 ut': 30057.2534713, 'illum': 'nscott@yahoo.com', 'sunt'
+	                                                                                                 : 'aLrGSkpBkujLzVgScjqW', 'eligendi': 'WvEqreXiIyjeqrtl
+	                                                                                                 bGPw', 'aliquid': 'npfHnxAzyRaSNEGDesxa'}
+	fake.pyfloat(left_digits=None, right_digits=None, positive=False)                              # -3.846934
+	fake.pyint()                                                                                   # 5958
+	fake.pyiterable(nb_elements=10, variable_nb_elements=True, *value_types)                       # [datetime.datetime(2004, 12, 5, 19, 3, 40), 8235, 'EViG
+	                                                                                                 RQlbBeYXOhdywroh', Decimal('-9.35'), 'OOqnSvZbMimgQZtdV
+	                                                                                                 Mhq', 3916, 'elliot09@smith.biz', 'GxiWhShcLOiKKngnKkrT
+	                                                                                                 ', 5945, datetime.datetime(2009, 8, 14, 17, 2, 9), Deci
+	                                                                                                 mal('-4700597582.68'), 'iDRKUFDBFpKwkvpAKeei']
+	fake.pylist(nb_elements=10, variable_nb_elements=True, *value_types)                           # ['https://www.stewart-johnson.org/', datetime.datetime(
+	                                                                                                 1989, 8, 11, 20, 31, 55), 1025, 'https://www.barnett.bi
+	                                                                                                 z/posts/blog/search/index.html', 'MYVdppeHRwpbBHJWVyVC'
+	                                                                                                 , 'zrobson@yahoo.com', 'lberry@boyle.com', 'YnsSJkyuvtx
+	                                                                                                 sWYobkRih', datetime.datetime(1979, 10, 20, 22, 36), 'C
+	                                                                                                 bfXtVURLsWoekcBPmsZ', 'ZNxGYPNpKUnbHjhRJNdj']
+	fake.pyset(nb_elements=10, variable_nb_elements=True, *value_types)                            # {Decimal('77053674.7199'), 'OKGWgAEGNNhhHmAIqivr', 528,
+	                                                                                                  datetime.datetime(2002, 12, 6, 10, 31, 9), 'williamsal
+	                                                                                                 ison@gmail.com', 'uEMKuhKXljNzJRrxrZrQ'}
+	fake.pystr(min_chars=None, max_chars=20)                                                       # TSbAezsogfPvGZRnSrHq
+	fake.pystruct(count=10, *value_types)                                                          # (['kevin68@hotmail.com', 'rcGurOzpcLxCZevPTeeX', 'http:
+	                                                                                                 //www.brown.com/terms.php', 'KFTeWLqJMYxuqJGvsvYt', 488
+	                                                                                                 1, 'ATXWczrhywBIiGbNSOpa', 'eJhkbYNPDrvtGsNflfBI', 'CLK
+	                                                                                                 zGGGUoCRgPBqchiON', 'eGqieZogKCZGCyzqNKjv', 'georgia17@
+	                                                                                                 hotmail.com'], {'quidem': -619436607.986533, 'inventore
+	                                                                                                 ': 'yPmrIBLxNZOvGZyblYAe', 'magni': 'thomassimon@yahoo.
+	                                                                                                 com', 'fugit': 'LyVosPDSskhxNUVLnnVM', 'sed': 1420.3933
+	                                                                                                 864, 'quo': 6975, 'odio': -3540253025.35, 'quasi': 'FuM
+	                                                                                                 CVhmroruFfxWJjDxb', 'vel': -2.780115}, {'earum': {0: 38
+	                                                                                                 91, 1: ['tgray@dawson.info', 'ajnNHqclRAXtTqvdbnFx', 'b
+	                                                                                                 arbara76@yahoo.com'], 2: {0: Decimal('46437.65710295'),
+	                                                                                                  1: 2870, 2: ['JQIRRLVaUlbzXWVoYvMP', 90749.48]}}, 'har
+	                                                                                                 um': {1: 'SVjzRUiblloiFvXqmXjK', 2: [-654279.722141433,
+	                                                                                                  -2336862.3479356, 'LsQKdzsuNNkzsyKFKSyu'], 3: {1: 'Vaz
+	                                                                                                 ckdhiwUAqEIXQEBRu', 2: -23186919.0, 3: ['KoKgVFiLkovKYb
+	                                                                                                 SrUShX', 6591]}}, 'veritatis': {2: datetime.datetime(19
+	                                                                                                 90, 3, 27, 0, 34, 29), 3: ['HhMOiSzcZvkPQHuVwyUY', date
+	                                                                                                 time.datetime(1982, 11, 5, 4, 54, 26), Decimal('-253258
+	                                                                                                 4.43523')], 4: {2: 8055, 3: 'LYGIUjKzTkwiigWpUYTQ', 4: 
+	                                                                                                 ['pUZZuHsYzwzQDnyfbBbz', 7916]}}, 'ex': {3: 484, 4: [da
+	                                                                                                 tetime.datetime(1986, 1, 1, 3, 54, 22), datetime.dateti
+	                                                                                                 me(2014, 9, 20, 19, 7, 53), 'YDlHPccIWMMrhnAOSfxF'], 5:
+	                                                                                                  {3: 9907, 4: Decimal('1487595.5'), 5: ['margaret75@yah
+	                                                                                                 oo.com', 'gxpSPigEVDybdDGrCKyk']}}, 'aut': {4: 'bLDXeLG
+	                                                                                                 dyIWuNzPXxyHT', 5: ['JoRByVTMlTvJYsKovsLR', 'ZFrUdSvxgM
+	                                                                                                 tDbklzwOrJ', Decimal('457786.37748035')], 6: {4: 'https
+	                                                                                                 ://www.evans-wood.com/terms.php', 5: 'JkGnJOaoVuKJuydEd
+	                                                                                                 gGc', 6: ['XtoXUVQKKkaWYcxZTDqO', 'https://gilbert.com/
+	                                                                                                 categories/explore/category/register/']}}, 'voluptates'
+	                                                                                                 : {5: Decimal('413187221.3'), 6: ['caENCAnEurWKEkatLzcc
+	                                                                                                 ', 4914, 'NTYDtLgIwUJXIPcavsMl'], 7: {5: 'HEJettheReTPr
+	                                                                                                 gxeTzKx', 6: 'KFaXnUWjqBeGcRYkgUxF', 7: [4788, 'baileyk
+	                                                                                                 yle@lawson.biz']}}, 'laboriosam': {6: 'nOdDEDEoKtTHfWlD
+	                                                                                                 nbop', 7: ['UKXDFNuDCWmwVLBflihZ', 5886, 2537], 8: {6: 
+	                                                                                                 'evansmelissa@taylor.com', 7: Decimal('241481.18'), 8: 
+	                                                                                                 [Decimal('-702534567919852.0'), 'richardsfrancesca@hotm
+	                                                                                                 ail.com']}}, 'iste': {7: datetime.datetime(2001, 9, 14,
+	                                                                                                  20, 53, 23), 8: ['aaron17@smith-atkins.org', 'hayley87
+	                                                                                                 @gill-booth.com', 55870337278187.0], 9: {7: 'SYLyHurxoc
+	                                                                                                 RjwNOtNERp', 8: 'OXkhFaoXKGOfxJglQLfP', 9: [39851.27495
+	                                                                                                 5, 'VcoEiASJzNpgCZWsgCwG']}}, 'dolor': {8: 5602, 9: ['h
+	                                                                                                 ttps://akhtar.com/faq/', 'FbdFncWmpQMAroueHCRP', 'https
+	                                                                                                 ://www.shaw.com/'], 10: {8: 7475, 9: Decimal('-19764142
+	                                                                                                 04.0'), 10: ['gGavDRvGkwTuIJsJAmQW', 'fwright@wilson-ah
+	                                                                                                 med.net']}}, 'deleniti': {9: 9049, 10: [5386, 4674, 580
+	                                                                                                 7], 11: {9: Decimal('-420211476792435.0'), 10: 1059, 11
+	                                                                                                 : [-4645.68, datetime.datetime(1992, 9, 5, 12, 27, 47)]
+	                                                                                                 }}})
+	fake.pytuple(nb_elements=10, variable_nb_elements=True, *value_types)                          # (datetime.datetime(1987, 11, 24, 7, 35, 55), 3331, 'uiK
+	                                                                                                 WVBQvyXYLdpxVszvP', 'https://freeman.net/search/tags/bl
+	                                                                                                 og/privacy/', 'oSgWFJFmxlpckSkuIdzr', 2760, Decimal('69
+	                                                                                                 38156237292.9'), 'zWBhZffZoicqfSntwgqC', 'BtjXwMzPMRWgi
+	                                                                                                 JhWkSCR', 7066, 'brownbethan@yahoo.com', 4989)
+
+### faker.providers.ssn
+
+	fake.ssn()                                                                                     # ZZ 088590 T
+
+### faker.providers.user_agent
+
+	fake.chrome(version_from=13, version_to=63, build_from=800, build_to=899)                      # Mozilla/5.0 (Windows NT 6.2) AppleWebKit/5360 (KHTML, l
+	                                                                                                 ike Gecko) Chrome/47.0.819.0 Safari/5360
+	fake.firefox()                                                                                 # Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_6; rv:1.9.2
+	                                                                                                 .20) Gecko/2017-01-30 12:51:56 Firefox/11.0
+	fake.internet_explorer()                                                                       # Mozilla/5.0 (compatible; MSIE 5.0; Windows 98; Trident/
+	                                                                                                 4.0)
+	fake.linux_platform_token()                                                                    # X11; Linux x86_64
+	fake.linux_processor()                                                                         # x86_64
+	fake.mac_platform_token()                                                                      # Macintosh; PPC Mac OS X 10_10_4
+	fake.mac_processor()                                                                           # U; PPC
+	fake.opera()                                                                                   # Opera/9.22.(X11; Linux x86_64; dv-MV) Presto/2.9.167 Ve
+	                                                                                                 rsion/10.00
+	fake.safari()                                                                                  # Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; 
+	                                                                                                 ff-SN) AppleWebKit/533.40.3 (KHTML, like Gecko) Version
+	                                                                                                 /4.0.5 Mobile/8B113 Safari/6533.40.3
+	fake.user_agent()                                                                              # Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_0; rv:1.9.3.
+	                                                                                                 20) Gecko/2011-06-19 05:59:38 Firefox/10.0
+	fake.windows_platform_token()                                                                  # Windows 98; Win 9x 4.90
+
+## LANGUAGE sl_SI
+
+### faker.providers.address
+
+	fake.address()                                                                                 # Jensenova ulica 5a
+	                                                                                                 0771 Bled
+	fake.building_number()                                                                         # 301
+	fake.city()                                                                                    # Sežana
+	fake.city_name()                                                                               # Slovenska Bistrica
+	fake.city_suffix()                                                                             # Ville
+	fake.country()                                                                                 # Gabon
+	fake.country_code()                                                                            # GW
+	fake.geo_coordinate(center=None, radius=0.001)                                                 # 178.505892
+	fake.latitude()                                                                                # 25.866140
+	fake.longitude()                                                                               # -8.898857
+	fake.postcode()                                                                                # 7368
+	fake.state()                                                                                   # Osrednjeslovenska
+	fake.street_address()                                                                          # Za vasjo 1b
+	fake.street_name()                                                                             # Demšarjeva cesta
+	fake.street_suffix()                                                                           # Street
+
+### faker.providers.automotive
+
+	fake.license_plate()                                                                           # 785-HCD
+
+### faker.providers.bank
+
+	fake.bank_country()                                                                            # GB
+	fake.bban()                                                                                    # YTBY6620068592785
+	fake.iban()                                                                                    # GB30WKXF3292310894972
+
+### faker.providers.barcode
+
+	fake.ean(length=13)                                                                            # 1866371887386
+	fake.ean13()                                                                                   # 9771052958106
+	fake.ean8()                                                                                    # 10988428
+
+### faker.providers.color
+
+	fake.color_name()                                                                              # Ivory
+	fake.hex_color()                                                                               # #911d88
+	fake.rgb_color()                                                                               # 163,73,118
+	fake.rgb_css_color()                                                                           # rgb(200,43,216)
+	fake.safe_color_name()                                                                         # fuchsia
+	fake.safe_hex_color()                                                                          # #668800
+
+### faker.providers.company
+
+	fake.bs()                                                                                      # synergize innovative niches
+	fake.catch_phrase()                                                                            # Optional homogeneous parallelism
